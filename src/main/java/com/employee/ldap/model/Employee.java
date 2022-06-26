@@ -58,12 +58,13 @@ public class Employee {
         this.username = username;
     }
 
-    public EmployeeDto copyValuesFromEntitytoDto(){
-    	EmployeeDto customerDto = new EmployeeDto();
-    	customerDto.setId(this.id);
-    	customerDto.setFirstName(this.firstName);
-    	customerDto.setLastName(this.lastName);
-    	customerDto.setUsername(this.username);
-        return customerDto;
+  public EmployeeDto copyValuesFromEntitytoDto(){
+    	EmployeeDto employeeDto = new EmployeeDto();
+    	employeeDto.setId(this.id);
+    	employeeDto.setFirstName(this.firstName);
+    	employeeDto.setLastName(this.lastName);
+    	employeeDto.setUsername(this.username);
+
+        return employeeDto;
     }
 }
