@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.employee.ldap.service.UserService;
 
 @RestController
-@RequestMapping("/employees")
 public class EmployeeController {
 
     private static final Logger log = LoggerFactory.getLogger(EmployeeController.class);
